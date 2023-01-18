@@ -13,11 +13,21 @@ Doi: https://dl.acm.org/doi/10.1145/3550454.3555443
 - Boost
 
 
-### We highly recommend using vcpkg to install dependent libraries!!!
+### Please using vcpkg to install dependent libraries!!!
 
-- vcpkg install boost:x64-windows
-- vcpkg install cgal:x64-windows
-- vcpkg install eigen:x64-windows
+#### Important: Please use  "git clone" to install vcpkg, otherwise you may get errors in cgal installation.
+
+- .\vcpkg install boost:x64-windows
+
+- .\vcpkg install cgal:x64-windows
+
+  ​	use "git pull" if you get errors with the "gmp" library.
+
+- .\vcpkg install Eigen3:x64-windows
+
+- .\vcpkg integrate install
+
+
 
 
 ### Makefile builds (Linux, other Unixes, and Mac. But we recommend using Windows.)
@@ -49,7 +59,18 @@ note: check the location of dependencies and install. It is recommended to use v
 
 Configure->Generate->Open Project
 
-ALL_BUILD->INSTALL
+ALL_BUILD -> Build
+Turn Debug to Release -> ALL_BUILD -> Build
+
+Please set MAIN as Startup Project, and make the following changes:
+
+Properties -> Configuration Properties -> C/C++ -> Code Generation -> 
+
+- Enable Parallel Code Generation : Yes
+- Enable Enhanced Instruction Set : AVX2
+- Floating Point Model : Fast
+
+Properties -> Configuration Properties -> C/C++ -> Language -> Open MP Support : Yes
 
 
 
