@@ -90,7 +90,7 @@ https://github.com/basselin7u/GPU-Restricted-Power-Diagrams
 - Windows 10 
 - Visual Studio 2022
 - AMD Ryzen 5950X
-- 64GB Momery
+- 64GB Memory
 
 Thanks for BGAL library: https://github.com/BKHao/BGAL
 
