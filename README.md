@@ -40,7 +40,7 @@ cmake ..
 make -j8
 make install
 ```
-
+If you are using Mac, please check this: https://github.com/Xrvitd/RFEPS/issues/3
 
 ### MSVC on Windows
 
