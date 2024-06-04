@@ -109,3 +109,6 @@ If you use our code, please consider citing our work:
 }
 ```
 
+## License
+RFEPS is under [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.en.html), so any downstream solution and products (including cloud services) that include RFEPS code inside it should be open-sourced to comply with the AGPL conditions. For learning purposes only and not for commercial use. If you want to use it for commercial purposes, please contact us first.
+
